@@ -1,0 +1,48 @@
+.section, .tweetsSection{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #11052C;
+}
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.contentContainer{
+    display: flex;
+}
+@media screen and (min-width :320px){
+    .section{
+        height: 100dvh;
+        padding-top: 60px;
+    }
+    .tweetsSection{
+        padding: 60px 0 60px;
+    }
+    .container{
+        max-width: 320px;
+    }
+    .contentContainer{
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+@media screen and (min-width :768px){
+    .section{
+        padding-top: 0;
+    }
+    .container{
+        max-width: 768px;
+    }
+    .contentContainer{
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+}
+@media screen and (min-width :1200px){
+    .container{
+        max-width: 1200px;
+    }
+    .contentContainer{
+        flex-direction: row;
+    }
+}
