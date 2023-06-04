@@ -58,7 +58,6 @@
     .userMenuContainer{
         height: 100dvh;
         padding-right: 47px;
-        padding-top: 60px;
         border-right: 3px solid #2B1F46;
         flex-direction: column;
     }
