@@ -14,8 +14,8 @@ function App() {
           <Route path="/" element={<UserMenu />}>
             <Route index element={<Home />} />
             <Route path="tweets" element={<Tweets />} />
-          </Route>
           <Route path="*" element={<Home />} />
+          </Route>
         </Routes>
       </Suspense>
     </div>
