@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/goit-test-task/static/css/main.2ae4b5a3.css",
-    "main.js": "/goit-test-task/static/js/main.739a360d.js",
+    "main.js": "/goit-test-task/static/js/main.8485714b.js",
     "static/css/77.5b46a86f.chunk.css": "/goit-test-task/static/css/77.5b46a86f.chunk.css",
     "static/js/77.343f4859.chunk.js": "/goit-test-task/static/js/77.343f4859.chunk.js",
-    "static/css/554.597b0fff.chunk.css": "/goit-test-task/static/css/554.597b0fff.chunk.css",
+    "static/css/554.fd3c83b6.chunk.css": "/goit-test-task/static/css/554.fd3c83b6.chunk.css",
     "static/js/554.8c024cc2.chunk.js": "/goit-test-task/static/js/554.8c024cc2.chunk.js",
     "static/css/788.c50a7f02.chunk.css": "/goit-test-task/static/css/788.c50a7f02.chunk.css",
     "static/js/788.0b5e73e1.chunk.js": "/goit-test-task/static/js/788.0b5e73e1.chunk.js",
@@ -13,10 +13,10 @@
     "static/media/picture2.png": "/goit-test-task/static/media/picture2.86562350dcaa714a1442.png",
     "index.html": "/goit-test-task/index.html",
     "main.2ae4b5a3.css.map": "/goit-test-task/static/css/main.2ae4b5a3.css.map",
-    "main.739a360d.js.map": "/goit-test-task/static/js/main.739a360d.js.map",
+    "main.8485714b.js.map": "/goit-test-task/static/js/main.8485714b.js.map",
     "77.5b46a86f.chunk.css.map": "/goit-test-task/static/css/77.5b46a86f.chunk.css.map",
     "77.343f4859.chunk.js.map": "/goit-test-task/static/js/77.343f4859.chunk.js.map",
-    "554.597b0fff.chunk.css.map": "/goit-test-task/static/css/554.597b0fff.chunk.css.map",
+    "554.fd3c83b6.chunk.css.map": "/goit-test-task/static/css/554.fd3c83b6.chunk.css.map",
     "554.8c024cc2.chunk.js.map": "/goit-test-task/static/js/554.8c024cc2.chunk.js.map",
     "788.c50a7f02.chunk.css.map": "/goit-test-task/static/css/788.c50a7f02.chunk.css.map",
     "788.0b5e73e1.chunk.js.map": "/goit-test-task/static/js/788.0b5e73e1.chunk.js.map",
@@ -24,6 +24,6 @@
   },
   "entrypoints": [
     "static/css/main.2ae4b5a3.css",
-    "static/js/main.739a360d.js"
+    "static/js/main.8485714b.js"
   ]
 }
