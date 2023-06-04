@@ -13,6 +13,7 @@ export default function Tweets() {
     const [filteredUsers, setFilteredUsers] = useState(null);
     const [filterOption, setFilterOption] = useState('all');
     const [showList, setShowList] = useState(false);
+    const [loadMore, setLoadMore] = useState(false);
 
   const perPage = 6;
   const location = useLocation();
@@ -26,8 +27,12 @@ export default function Tweets() {
   useEffect(() => {
     const fetchTrendingMovies = async () => {
       const user = await fetchUsers(currentPage, perPage);
-    setUsers(user)
-
+    setUsers(prevUsers => (currentPage === 1 ? user : [...prevUsers, ...user]));
+    if (user.length > 5) {
+        setLoadMore(true);
+      } else {
+        setLoadMore(false);
+      }
       const total = await fetchUsers();
       const totalUsersCount = total.length;
       const totalPage = Math.ceil(totalUsersCount / perPage);
@@ -71,7 +76,9 @@ export default function Tweets() {
       })
     );
   };
-
+  const onLoadMore = () => {
+    setCurrentPage(currentPage + 1);
+  };
   const handleFilterChange = async (option) => {
     if (option === 'all') {
         option = "all";
@@ -90,11 +97,6 @@ const showCategories= () =>{
 
     setShowList(!showList);
 }
-const handlePageChange = (pageNumber) => {
-    if (pageNumber >= 1 && pageNumber <= totalPages) {
-        setCurrentPage(pageNumber);
-    }
-};
 return <div>
     <div className={css.contentContainer}>
     <div className={css.toggleBtnContainer}>
@@ -134,21 +136,15 @@ return <div>
                         </li>)}</>
                 )}
             </ul>
-            {filterOption !== true && filterOption !== false &&
+            {filterOption !== true && filterOption !== false && loadMore &&
             <div className={css.pagination}>
-            <button className={css.btnPrevious}
-            disabled={currentPage === 1}
-            onClick={() => handlePageChange(currentPage - 1)}
-            >
-            Previous
-            </button>
             <button className={css.btnNext}
-            disabled={currentPage === totalPages}
-            onClick={() => handlePageChange(currentPage + 1)}
-            >
-            Next
+              disabled={currentPage === totalPages}
+              onClick={onLoadMore}
+              >
+              Load More
             </button>
-            </div>
+          </div>
     }
             </div>
 }
