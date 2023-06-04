@@ -1,0 +1,41 @@
+.BackBtnContainer{
+    padding-top: 60px;
+}
+.BackBtn{
+    padding: 12px 36px;
+    background: #4B2A99;
+    border: none;
+    border-radius: 19px;
+    color: #fff;
+}
+@media screen and (min-width :320px){
+.BackBtnContainer{
+    padding-top: 20px;
+}
+.BackBtn{
+    font-size: 16px;
+}
+}
+@media screen and (min-width :768px){
+    .BackBtnContainer{
+        padding-top: 60px;
+        text-align: left;
+    }
+    .BackBtn{
+        font-size: 18px;
+    }
+}
+@media screen and (min-width :1200px){
+    .container{
+        max-width: 1200px;
+    }
+    .contentContainer{
+        flex-direction: row;
+    }
+    .BackBtn{
+        font-size: 20px;
+    }
+}
+.contentContainer{
+    display: flex;
+}
