@@ -1,4 +1,5 @@
 import css from './Section.module.css'
+import propTypes from 'prop-types';
 import { useLocation } from "react-router-dom"
 export default function Section({children}){
     const location = useLocation();
@@ -9,4 +10,7 @@ export default function Section({children}){
             </div>
         </div>
     </section>
+}
+Section.propTypes ={
+    childre: propTypes.node,
 }

@@ -23,8 +23,6 @@ export default function Tweets() {
   }
 
   const [from, setFrom] = useState(location.state?.from ?? "/");
-const u = [...users];
-console.log(u);
   useEffect(() => {
     const fetchTrendingMovies = async () => {
       const user = await fetchUsers(currentPage, perPage);
