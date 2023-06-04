@@ -34,7 +34,7 @@
         max-width: 768px;
     }
     .contentContainer{
-        justify-content: space-evenly;
+        justify-content: space-between;
         flex-direction: row;
     }
 }

@@ -2,6 +2,12 @@
     position: relative;
     padding-top: 62px;
 }
+.contentContainer{
+    display: flex;
+    align-items: baseline;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
 .rectangle{
     width: 100%;
     width: 356px;
@@ -156,4 +162,34 @@
     .image{
         width: 320px;
     }
+}
+
+.toggleBtnContainer{
+    height: 137px;
+}
+.toggleBtn{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background: #fff;
+    border: none;
+    border-radius: 19px;
+    padding: 12px 36px;
+    color: #4B2A99;
+    cursor: pointer;
+}
+.optionsList{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 4px;
+}
+.optionsListBtn{
+    width: 80%;
+    font-family: 'Montserrat', sans-serif;
+    color: #4B2A99;
+    background: #fff;
+    border: none;
+    padding: 6px 18px;
+    border-radius: 15px;
+    cursor: pointer;
 }
