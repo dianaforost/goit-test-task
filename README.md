@@ -13,5 +13,5 @@ Click on the button in the additional menu (menu on the right) or on the "Go to 
 By clicking on the "Filter tweets" button, you can filter all tweets by who you are following and who you are not yet following.
 By clicking on the "Back" button, you can return to the Home page
 ![How to use](./assets/tweets.png)
-By clicking "Previous" you will see the previous ones. And by clicking on the "Newt" button, you can see the following users.
+By clicking on the "Load More" button, you can see the following users.
 ![How to use](./assets/pagination.png)
